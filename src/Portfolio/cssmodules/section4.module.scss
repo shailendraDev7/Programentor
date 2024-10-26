@@ -1,0 +1,13 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.cross_functional {
+  display: flex;
+  flex-direction: column;
+  min-height: 819px;
+}
+
+.image23 {
+  margin: 65px 24.6% 0 auto;
+  width: 895px;
+}
