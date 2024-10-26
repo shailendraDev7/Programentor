@@ -1,0 +1,353 @@
+@use "./utils" as *;
+@use "../global" as *;
+
+.portfolioSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectGallery {
+  position: absolute;
+  inset: 0 271px 39px 274px;
+  display: flex;
+  flex-direction: column;
+  width: 1435px;
+}
+
+.galleryImage {
+  position: absolute;
+  top: 9px;
+  left: 584px;
+  width: 642px;
+}
+
+.thumbnailContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.thumbnailRight {
+  z-index: 1;
+  margin: 595px 0 0;
+  width: 572px;
+  min-width: 0;
+  object-fit: cover;
+
+  @include md {
+    margin: 150px 0 0;
+  }
+
+  @include xs {
+    margin: 80px 0 0;
+  }
+
+  @include tn {
+    margin: 50px 0 0;
+  }
+}
+
+.thumbnailLeft {
+  margin: 0 0 536px;
+  width: 625px;
+  min-width: 0;
+  object-fit: cover;
+
+  @include md {
+    margin: 0 0 150px;
+  }
+
+  @include xs {
+    margin: 0 0 80px;
+  }
+
+  @include tn {
+    margin: 0 0 50px;
+  }
+}
+
+.featuredProjects {
+  position: relative;
+  display: flex;
+  gap: 0 4px;
+  margin: 191px 17.68% 175px auto;
+  width: 1170px;
+  max-width: 85%;
+
+  @include xxl {
+    margin: 191px auto 175px;
+  }
+
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 4px;
+    margin: 150px auto;
+  }
+
+  @include xs {
+    margin: 80px auto;
+  }
+
+  @include tn {
+    margin: 50px auto;
+  }
+}
+
+.projectCard {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 568px 0 0;
+  width: 583px;
+  min-width: 0;
+
+  @include md {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.projectImage {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.projectDetails {
+  position: absolute;
+  top: 7px;
+  right: -587px;
+  display: flex;
+  flex-direction: column;
+  width: 669px;
+}
+
+.projectLabel {
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 3px;
+  width: 99.1%;
+  height: 24px;
+  font: 600 16px/1.5 Poppins, Helvetica, Arial, serif;
+  color: rgb(152 87 211);
+  text-align: right;
+  letter-spacing: 0.32px;
+}
+
+.projectTitle {
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 17px;
+  width: 94.92%;
+  height: 51px;
+  font: 600 34px/1.5 Poppins, Helvetica, Arial, serif;
+  color: rgb(204 214 246);
+  text-align: right;
+  letter-spacing: 0.68px;
+
+  @include md {
+    font-size: 32px;
+  }
+
+  @include xs {
+    margin: 0 16px;
+  }
+
+  @include xxs {
+    font-size: 28px;
+  }
+
+  @include tn {
+    margin: 0 8px;
+  }
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  margin: 21px 0 0;
+  width: 100%;
+  background: var(--src) center center / cover no-repeat;
+}
+
+.descriptionText {
+  display: flex;
+  align-items: center;
+  margin: 26px 50px 31px 34px;
+  width: 87.44%;
+  height: 108px;
+  font: 500 18px/1.5 Poppins, Helvetica, Arial, serif;
+  color: rgb(204 214 246);
+
+  @include md {
+    margin: 26px 32px 31px;
+    font-size: 16px;
+  }
+
+  @include xs {
+    margin: 26px 16px 31px;
+  }
+
+  @include tn {
+    margin: 26px 8px 31px;
+  }
+}
+
+.techStack {
+  display: flex;
+  gap: 0 17px;
+  margin: 36px 42px 0 548px;
+  width: 79px;
+  max-width: 85%;
+  height: 32px;
+
+  @include md {
+    margin: 36px 32px 0;
+  }
+
+  @include sm {
+    margin: 36px auto 0;
+  }
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.techIcon {
+  z-index: 1;
+  margin: 0 0 1px;
+  width: 31px;
+  height: 31px;
+  object-fit: cover;
+}
+
+.techIcon1 {
+  margin: 1px 0 0;
+  width: 31px;
+  height: 31px;
+  object-fit: cover;
+}
+
+.projectCard1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 568px;
+  width: 583px;
+  min-width: 0;
+
+  @include md {
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.projectImage1 {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.projectDetails1 {
+  position: absolute;
+  top: 24px;
+  left: -587px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px 0;
+  width: 669px;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projectLabel1 {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  margin: 0 2px;
+  width: 99.4%;
+  height: 24px;
+  font: 600 16px/1.5 Poppins, Helvetica, Arial, serif;
+  color: rgb(152 87 211);
+  letter-spacing: 0.32px;
+}
+
+.projectTitle1 {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 2px;
+  width: 99.4%;
+  height: 51px;
+  font: 600 34px/1.5 Poppins, Helvetica, Arial, serif;
+  color: rgb(204 214 246);
+  letter-spacing: 0.58px;
+
+  @include md {
+    font-size: 32px;
+  }
+
+  @include xxs {
+    font-size: 28px;
+  }
+}
+
+.projectDescription1 {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0;
+  width: 100%;
+  background: var(--src) center center / cover no-repeat;
+}
+
+.techStack1 {
+  display: flex;
+  gap: 0 17px;
+  width: 91.93%;
+
+  @include xs {
+    column-gap: 16px;
+  }
+
+  @include tn {
+    column-gap: 8px;
+  }
+}
+
+.techIcon2 {
+  z-index: 1;
+  margin: 0 0 1px;
+  width: 31px;
+  object-fit: cover;
+}
+
+.techIcon3 {
+  margin: 1px 0 0;
+  width: 31px;
+  object-fit: cover;
+}

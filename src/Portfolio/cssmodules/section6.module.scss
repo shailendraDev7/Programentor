@@ -1,0 +1,43 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 164px;
+  min-height: 390px;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  margin: 59px 0 56px 23.13%;
+  width: 703px;
+}
+
+.medium_title {
+  display: flex;
+  align-items: center;
+  width: 703px;
+  height: 45px;
+  font: 400 25px/1.8 Preahvihear, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  letter-spacing: 0.5px;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 73px 0 0;
+  width: 703px;
+  height: 108px;
+  font: 400 15px/1.8 Preahvihear, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  letter-spacing: 0.3px;
+}
+
+.image58 {
+  margin: 31px 593px 0 0;
+  width: 110px;
+  height: 18px;
+}

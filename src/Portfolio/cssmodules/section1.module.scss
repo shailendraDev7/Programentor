@@ -1,0 +1,77 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.nav_section {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  min-height: 113px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center / 100% 100% no-repeat;
+  box-shadow: 0 6px 22px -3px rgb(0 0 0 / 10%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  margin: 35px 356px 35px 497px;
+  width: 1127px;
+  height: 43px;
+}
+
+.logo {
+  z-index: 1;
+  width: 35px;
+  height: 43px;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 9px 0;
+  width: 510px;
+  height: 25px;
+}
+
+.menuitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 25px;
+  font: 600 20px/1.25 "Plus Jakarta Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.menuitem1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  height: 25px;
+  font: 600 20px/1.25 "Plus Jakarta Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.menuitem2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 25px;
+  font: 600 20px/1.25 "Plus Jakarta Sans", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+  letter-spacing: 0.4px;
+}
